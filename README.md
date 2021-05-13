@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/DjordjevicN/Syntwave-web-dev-portfolio/main/MacBook%20Pro%20-%201.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
