@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+/* font-family: 'Mr Dafoe', cursive; */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Oswald", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body {
   min-height: 100vh;
@@ -17,6 +19,10 @@ body {
   );
   overflow-x: hidden;
 }
+.link {
+  text-decoration: none;
+}
+
 /* body::after {
   content: "";
   position: absolute;
@@ -63,7 +69,7 @@ body {
 }
 .header--title {
   position: absolute;
-  top: 35vw;
+  top: 40%;
   left: 0;
   color: white;
   text-align: center;
@@ -75,6 +81,16 @@ body {
   color: white;
   letter-spacing: 4vw;
   margin: 0 auto;
+}
+.headerArrow__wrapper {
+  transform: rotateZ(90deg);
+  bottom: 200px;
+  position: absolute;
+  z-index: 1100;
+  cursor: pointer;
+}
+.headerArrow--img {
+  width: 30px;
 }
 
 .stars {
@@ -98,5 +114,139 @@ body {
 }
 
 .menu__wrapper {
-  background-color: aqua;
+  background-color: #15003d;
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+.menu__content {
+  text-align: center;
+}
+.menu--title {
+  font-family: "Mr Dafoe", cursive;
+  font-weight: 100;
+  font-size: 74px;
+  padding: 0 100px;
+  background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: azure; */
+}
+.navigation {
+  margin-top: 60px;
+}
+.navigation p {
+  padding: 15px 0;
+  margin: 5px 0;
+  color: white;
+  letter-spacing: 10px;
+  transition: 0.3s;
+}
+.navigation p:hover {
+  color: #b1008e;
+  letter-spacing: 13px;
+}
+
+.aboutMe__wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #15003d;
+  display: grid;
+  place-items: center;
+}
+.aboutMe__content {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.abutMe__image {
+  display: grid;
+  place-items: center;
+}
+
+.aboutMe__text {
+  padding-left: 20px;
+  font-size: 20px;
+}
+.aboutMe__text h1,
+.section--title {
+  background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutMe__text p {
+  font-weight: 300;
+  color: rgb(204, 204, 204);
+}
+.aboutMe__text span {
+  color: #6ef2c3;
+  font-weight: 500;
+}
+.commented {
+  color: rgb(0, 87, 0);
+  font-weight: 400;
+}
+
+.projects__wrapper {
+  padding: 50px 0;
+  display: grid;
+  place-items: center;
+  background-color: #15003d;
+  width: 100%;
+}
+.section--title {
+  padding: 50px 0;
+}
+.projects__content {
+  width: 80%;
+}
+.projectBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.projectImage {
+  width: 50%;
+}
+.projectText {
+  padding-left: 20px;
+}
+.projectText h1 {
+  color: #6ef2c3;
+}
+.projectText p {
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+}
+.arrowRight {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.contact__wrapper {
+  display: grid;
+  place-items: center;
+  background-color: #15003d;
+  height: 70vh;
+  width: 100%;
+}
+.contact__content {
+  color: white;
+}
+.contact__content h1 {
+  background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px 0;
+}
+.contact__content p {
+  padding: 20px 0;
+}
+.contact__content span {
+  color: #6ef2c3;
+}
+.contact__content a {
+  color: #6ef2c3;
+  text-decoration: none;
 }

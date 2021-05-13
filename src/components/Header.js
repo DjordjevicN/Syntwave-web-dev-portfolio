@@ -1,11 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import music from './bgMusic.mp3'
 
 
-const handlePlayer = () => {
-    console.log('music player click');
+
+let audio = new Audio(music);
+
+
+const handleScroll = () => {
+    console.log('scroll');
 }
 
 function Header() {
+    const [sunPosition, setSunPosition] = useState(0);
+    const [starsPosition, setStarsPosition] = useState(0);
+    const [starsPositionLeft, setSunPositionLeft] = useState(0);
+    const [mountainsBackPosition, setMountainsBackPosition] = useState(0);
+    const [gridPosition, setGridPosition] = useState(0);
+    const [playing, setPlaying] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            setStarsPosition(value * 0.9)
+            setSunPosition(value * 0.9)
+            setSunPositionLeft(value * -0.2)
+            setMountainsBackPosition(value * 0.6)
+            setGridPosition(value * 0.5)
+        })
+    }, []);
+
+    const handlePlayer = () => {
+        if (playing) {
+            audio.pause();
+            setPlaying(false)
+        } else {
+            audio.play();
+            setPlaying(true)
+        }
+    }
+
     return (
         <div className='header__wrapper'>
 
@@ -14,21 +47,27 @@ function Header() {
             </div>
 
             <div className="header__parallax">
-                <img className="header__parallax--img stars " src="/images/stars.png" alt="stars" />
-                <img className="header__parallax--img sun" src="/images/sun.png" alt="sun" />
-                <div className='header--title'>
+                <img className="header__parallax--img stars " src="/images/stars.png" alt="stars" style={{ top: starsPosition }} />
+                <img className="header__parallax--img sun" src="/images/sun.png" alt="sun" style={{ top: sunPosition, left: starsPositionLeft }} />
+                <div className='header--title'  >
                     <div>
                         <h1 className="header__parallax--title">FRONT END</h1>
                         <h1 className="header__parallax--title">DEVELOPER</h1>
                     </div>
                 </div>
-
-                <img className="header__parallax--img backMountains" src="/images/mountain-back.png" alt="sun" />
-                <img className="header__parallax--img grid" src="/images/grid.png" alt="sun" />
+                <img className="header__parallax--img backMountains" src="/images/mountain-back.png" alt="sun" style={{ top: mountainsBackPosition }} />
+                <img className="header__parallax--img grid" src="/images/grid.png" alt="grid" style={{
+                    top: gridPosition
+                }} />
                 <img className="header__parallax--img mountains" src="/images/mountains.png" alt="sun" />
             </div>
 
-            <p>arrow</p>
+            <div className="headerArrow__wrapper" onClick={handleScroll}>
+                <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
+                <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
+                <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
+            </div>
+
         </div>
     );
 }
