@@ -13,8 +13,6 @@ function Header() {
                 <img className="musicPlayer__image" src="/images/tape.png" alt="music" onClick={handlePlayer} />
             </div>
 
-
-
             <div className="header__parallax">
                 <img className="header__parallax--img stars " src="/images/stars.png" alt="stars" />
                 <img className="header__parallax--img sun" src="/images/sun.png" alt="sun" />
@@ -24,6 +22,7 @@ function Header() {
                         <h1 className="header__parallax--title">DEVELOPER</h1>
                     </div>
                 </div>
+
                 <img className="header__parallax--img backMountains" src="/images/mountain-back.png" alt="sun" />
                 <img className="header__parallax--img grid" src="/images/grid.png" alt="sun" />
                 <img className="header__parallax--img mountains" src="/images/mountains.png" alt="sun" />

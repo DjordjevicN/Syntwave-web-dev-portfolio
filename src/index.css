@@ -7,6 +7,7 @@
   font-family: "Oswald", sans-serif;
 }
 body {
+  min-height: 100vh;
   background: rgb(42, 0, 84);
   background: linear-gradient(
     0deg,
@@ -14,6 +15,7 @@ body {
     rgba(177, 0, 142, 1) 35%,
     rgba(42, 0, 84, 1) 100%
   );
+  overflow-x: hidden;
 }
 /* body::after {
   content: "";
@@ -34,9 +36,14 @@ body {
   opacity: 0.4;
 } */
 .header__wrapper {
+  position: relative;
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .musicPlayer__image {
   position: absolute;
@@ -46,22 +53,19 @@ body {
   cursor: pointer;
   z-index: 1000000;
 }
-.header__parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 100vh; */
-}
 .header__parallax--img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .header--title {
   position: absolute;
-  top: 30vw;
+  top: 35vw;
+  left: 0;
+  color: white;
   text-align: center;
   width: 100%;
   z-index: 100;
@@ -72,6 +76,7 @@ body {
   letter-spacing: 4vw;
   margin: 0 auto;
 }
+
 .stars {
   z-index: 100;
 }
