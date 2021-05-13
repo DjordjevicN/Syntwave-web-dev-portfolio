@@ -1,4 +1,4 @@
-![]()
+![](https://raw.githubusercontent.com/DjordjevicN/Syntwave-web-dev-portfolio/main/MacBook%20Pro%20-%201.png)
 
 # Getting Started with Create React App
 
