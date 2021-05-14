@@ -21,6 +21,7 @@ body {
 }
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* body::after {
@@ -28,7 +29,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 15000;
+  z-index: 150000;
   top: 0;
   background-size: 4px;
   pointer-events: none;
@@ -58,6 +59,29 @@ body {
   width: 90px;
   cursor: pointer;
   z-index: 1000000;
+  animation: tape 3s infinite;
+}
+@keyframes tape {
+  0% {
+    top: 20px;
+    left: 20px;
+  }
+  25% {
+    top: 20px;
+    left: 40px;
+  }
+  74% {
+    top: 20px;
+    left: 20px;
+  }
+  75% {
+    top: 30px;
+    left: 20px;
+  }
+  100% {
+    top: 20px;
+    left: 20px;
+  }
 }
 .header__parallax--img {
   position: absolute;
@@ -204,12 +228,13 @@ body {
 .projectBox {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .projectImage {
   width: 50%;
 }
 .projectText {
+  width: 50%;
   padding-left: 20px;
 }
 .projectText h1 {
@@ -249,4 +274,64 @@ body {
 .contact__content a {
   color: #6ef2c3;
   text-decoration: none;
+}
+
+.project__wrapper {
+  background-color: #15003d;
+}
+.project__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.goBack {
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.goBack p {
+  color: #6ef2c3;
+  font-size: 24px;
+}
+.section {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project--image {
+  width: 90%;
+}
+.project__texts {
+  width: 100%;
+}
+.project__texts p {
+  color: white;
+}
+.project__texts p span {
+  color: #6ef2c3;
+}
+.project__texts--space {
+  padding-top: 20px;
+}
+.projectLinkedTitle {
+  display: flex;
+  padding-bottom: 20px;
+  background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projectLinkedTitle a {
+  color: white;
+  text-decoration: none;
+}
+.goBackImg {
+  transform: rotateZ(180deg);
+  width: 50px;
+}
+.maiaProject {
+  width: 100%;
+  height: 100vh;
+  background-color: #15003d;
 }

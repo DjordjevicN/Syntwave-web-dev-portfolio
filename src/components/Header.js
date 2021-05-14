@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import music from './bgMusic.mp3'
 
-
-
-let audio = new Audio(music);
-
-
-const handleScroll = () => {
-    console.log('scroll');
-}
+const audio = new Audio(music);
 
 function Header() {
     const [sunPosition, setSunPosition] = useState(0);
@@ -35,6 +28,7 @@ function Header() {
             setPlaying(false)
         } else {
             audio.play();
+            audio.volume = 0.5;
             setPlaying(true)
         }
     }
@@ -62,11 +56,11 @@ function Header() {
                 <img className="header__parallax--img mountains" src="/images/mountains.png" alt="sun" />
             </div>
 
-            <div className="headerArrow__wrapper" onClick={handleScroll}>
+            {/* <div className="headerArrow__wrapper" onClick={handleScroll}>
                 <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
                 <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
                 <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
-            </div>
+            </div> */}
 
         </div>
     );

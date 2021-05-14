@@ -4,7 +4,7 @@ import React from 'react';
 function AboutMe() {
     return (
         <>
-            <div className="aboutMe__wrapper">
+            <div className="aboutMe__wrapper" >
                 <div className="aboutMe__content">
                     <div className="abutMe__image">
                         <img src="/images/profile.jpg" alt="" />
@@ -12,7 +12,7 @@ function AboutMe() {
                     <div className="aboutMe__text">
                         <h1>ABOUT ME</h1>
                         <p>My name is <span>Nikola Djordjevic</span></p>
-                        <p>I am a Front-end web developer i use  <span>React</span> as a main lybrary <span>Redux</span> for state management.</p>
+                        <p>I am a Front-end web developer i use  <span>React</span> as a main lybrary and <span>Redux</span> for state management.</p>
                         <p>I also use</p>
                         <p><span>Figma: </span>for making mockups and prototyping</p>
                         <p><span>GSAP: </span>for animations</p>
