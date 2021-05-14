@@ -379,3 +379,70 @@ body {
   background: rgb(68, 68, 68);
   border: none;
 }
+
+@media only screen and (max-width: 1200px) {
+  .projectImage {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projectBox {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #28164b;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .projectBox:hover {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #28164b;
+    background-color: #1d0057;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .projectText h1 {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .projectText {
+    width: 90%;
+    padding-left: 0px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .projectImage {
+    width: 90%;
+  }
+  .arrowRight {
+    text-align: center;
+  }
+  .aboutMe__content {
+    display: block;
+  }
+  .aboutMe__text {
+    font-size: 16px;
+  }
+  .aboutMe__text h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .section {
+    grid-template-columns: 1fr;
+  }
+  .weekendSplit {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+  }
+  .textAction {
+    text-align: center;
+  }
+}

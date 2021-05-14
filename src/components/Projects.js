@@ -24,7 +24,6 @@ function Projects() {
                                     <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
                                 </div>
                             </Link>
-
                         </div>
 
                     </div>)
