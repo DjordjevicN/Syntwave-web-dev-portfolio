@@ -1,9 +1,11 @@
 import React from 'react';
 
 
+
 function Contact() {
     return (
-        <div className="contact__wrapper">
+        <div className="contact__wrapper" >
+
             <div className="contact__content">
                 <h1>CONTACT</h1>
                 <p><span>Email:</span> nikola.dj.87@gmail.com</p>

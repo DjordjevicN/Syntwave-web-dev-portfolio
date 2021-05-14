@@ -23,6 +23,10 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.link a {
+  color: #6ef2c3;
+  text-decoration: none;
+}
 
 /* body::after {
   content: "";
@@ -258,12 +262,15 @@ body {
 }
 .contact__content {
   color: white;
+  padding: 50px 150px;
+  border: 1px solid white;
+  border-radius: 20px;
 }
 .contact__content h1 {
   background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 .contact__content p {
   padding: 20px 0;
@@ -334,4 +341,41 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #15003d;
+}
+.weekendSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+}
+.weekendProject__image {
+  width: 90%;
+}
+.textAction h3 {
+  background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  padding-bottom: 40px;
+}
+
+.textAction p {
+  color: white;
+}
+.button {
+  padding: 7px 20px;
+  font-size: 18px;
+  margin: 30px 30px 0 0;
+  background: linear-gradient(to bottom, #b1008e 0%, rgba(42, 0, 84, 1) 100%);
+  border: none;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+.disabled {
+  padding: 7px 20px;
+  font-size: 18px;
+  margin: 30px 30px 0 0;
+  background: rgb(68, 68, 68);
+  border: none;
 }

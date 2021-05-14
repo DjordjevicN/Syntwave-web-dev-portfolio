@@ -56,11 +56,7 @@ function Header() {
                 <img className="header__parallax--img mountains" src="/images/mountains.png" alt="sun" />
             </div>
 
-            {/* <div className="headerArrow__wrapper" onClick={handleScroll}>
-                <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
-                <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
-                <img className='headerArrow--img' src="/images/Synthwave-arrow.png" alt="" />
-            </div> */}
+
 
         </div>
     );

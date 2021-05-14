@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Menu() {
 
     return (
@@ -14,9 +13,11 @@ function Menu() {
                     <p className='link' onClick={() => {
                         window.scrollTo(0, 2400);
                     }}>Projects</p>
-                    <p className='link' onClick={() => {
+                    {/* <p className='link' onClick={() => {
                         window.scrollTo(0, 3800);
-                    }}>Contact</p>
+                    }}>Contact</p> */}
+                    <p className='link' ><a href="mailto:nikola.dj.87@gmail.com" rel="noreferrer">Email</a></p>
+                    <p className='link'><a href="https://www.linkedin.com/in/nikola-djordjevic-503066193/" target="_blank" rel="noreferrer" >LinkedIn</a></p>
                 </div>
             </div>
         </div>
