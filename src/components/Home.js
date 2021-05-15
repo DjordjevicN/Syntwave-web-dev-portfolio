@@ -3,7 +3,6 @@ import Header from './Header'
 import Menu from './Menu'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
-// import Contact from './Contact'
 function Home() {
     return (
         <div>
@@ -11,7 +10,6 @@ function Home() {
             <Menu />
             <AboutMe />
             <Projects />
-            {/* <Contact /> */}
         </div>
     );
 }
