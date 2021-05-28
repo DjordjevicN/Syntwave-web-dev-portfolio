@@ -407,6 +407,10 @@ body {
     padding: 20px;
     border-radius: 8px;
   }
+  .section--title {
+    text-align: center;
+    margin-top: 160px;
+  }
   .projectText h1 {
     font-size: 18px;
     text-align: center;
@@ -434,6 +438,7 @@ body {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
+    padding: 50px 0;
   }
   .section {
     grid-template-columns: 1fr;

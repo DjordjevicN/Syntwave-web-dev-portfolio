@@ -14,6 +14,15 @@ function WeekendProjects() {
                 </Link>
 
                 <div className="weekendSplit">
+                    <img className='weekendProject__image' src="/images/spaceinv.jpg" alt="" />
+                    <div className="textAction">
+                        <h3>Space invaders game</h3>
+                        <p></p>
+                        <button className='button'><a href="https://github.com/DjordjevicN/space-invaders-001" target="_blank" rel="noreferrer">Github</a></button>
+                        <button className='button'><a href="https://romantic-nobel-9d4e1e.netlify.app/" target="_blank" rel="noreferrer">Visit</a></button>
+                    </div>
+                </div>
+                <div className="weekendSplit">
                     <img className='weekendProject__image' src="/images/rickandmorty.jpg" alt="" />
                     <div className="textAction">
                         <h3>Rick and Morty show character facts</h3>

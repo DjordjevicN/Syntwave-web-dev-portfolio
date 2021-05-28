@@ -34,10 +34,10 @@ function Header() {
     }
 
     return (
-        <div className='header__wrapper'>
+        <div className='header__wrapper' onClick={handlePlayer}>
 
             <div className="musicPlayer__wrapper">
-                <img className="musicPlayer__image" src="/images/tape.png" alt="music" onClick={handlePlayer} />
+                <img className="musicPlayer__image" src="/images/tape.png" alt="music" />
             </div>
 
             <div className="header__parallax">
