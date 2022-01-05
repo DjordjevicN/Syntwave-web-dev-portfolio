@@ -9,7 +9,7 @@ function Home() {
       <Header />
       <Menu />
       <AboutMe />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   );
 }
